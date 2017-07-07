@@ -1,0 +1,44 @@
+TODO GUIDE
+
+using MySQL database
+
+Tables:
+
+todolist
+todouser
+
+MySQL commands:
+
+CREATE TABLE todolist (
+no INT NOT NULL AUTO_INCREMENT,
+id INT(3) NOT NULL DEFAULT 0,
+task VARCHAR(30) NOT NULL,
+created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+modified TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+status CHAR(1) NOT NULL DEFAULT 'x',
+PRIMARY KEY(no)
+);
+
+INSERT INTO todolist (id, task) VALUES (0, 'task');
+
+DELETE FROM todolist WHERE no = no;
+
+UPDATE todolist SET status = 'o' WHERE no = no;
+
+
+CREATE TABLE todouser (
+id INT(3) NOT NULL AUTO_INCREMENT,
+username VARCHAR(20) NOT NULL,
+password VARCHAR(20) NOT NULL,
+email VARCHAR(30) NOT NULL,
+PRIMARY KEY(id)
+);
+
+
+CHALLENGE
+
+* detail special note [icon in index list]
+* display deleted tasks
+* priorities
+* duedate
+* repeater

@@ -1,0 +1,52 @@
+body {
+	background: lightgray;
+}
+
+#container {
+	border-radius: 15px;
+	margin: 5%;
+	padding: 20px 50px 40px;
+	background: white;
+}
+
+#title {
+	background: lightgray;
+	border-radius: 10px;
+	padding: 20px 30%;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+    border: 2px dotted;
+
+}
+
+th {
+    border: 2px dotted gray;	
+	background: lightgray;
+    padding: 3px 10px;
+}
+
+td {
+    border: 2px dotted gray;
+    padding: 3px 10px;
+	text-align: center;
+}
+
+.btn {
+	float: right;
+}
+
+.sys {
+	color: blue;
+	font-size: 10px;
+}
+
+.err {
+	color: red;
+	font-size: 10px;
+}
